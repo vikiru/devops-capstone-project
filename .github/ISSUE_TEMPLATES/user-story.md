@@ -1,3 +1,9 @@
+---
+name: User Story Template
+about: User Story
+assignees: vikiru
+---
+
 **As a** [role]
 **I need** [function]
 **So that** [benefit]
