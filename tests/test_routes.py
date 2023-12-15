@@ -21,9 +21,12 @@ DATABASE_URI = os.getenv(
 BASE_URL = "/accounts"
 HTTPS_ENVIRON = {'wsgi.url_scheme': 'https'}
 
+
 ######################################################################
 #  T E S T   C A S E S
 ######################################################################
+
+
 class TestAccountService(TestCase):
     """Account Service Tests"""
 
@@ -41,12 +44,14 @@ class TestAccountService(TestCase):
     def tearDownClass(cls):
         """Runs once before test suite"""
 
+
     def setUp(self):
         """Runs before each test"""
         db.session.query(Account).delete()  # clean up the last tests
         db.session.commit()
 
         self.client = app.test_client()
+
 
     def tearDown(self):
         """Runs once after each test case"""
