@@ -1,4 +1,6 @@
-# DevOps Capstone Template
+<h1 align="center">IBM DevOps and Software Engineering <br> Capstone </h1>
+
+![Build Status](https://github.com/vikiru/devops-capstone-project/actions/workflows/ci-build.yaml/badge.svg)
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python 3.9](https://img.shields.io/badge/Python-3.9-green.svg)](https://shields.io/)
@@ -9,13 +11,13 @@ This repository contains the starter code for the project in [**IBM-CD0285EN-Ski
 
 You should use this template to start your DevOps Capstone project. It contains all of the code that you will need to get started.
 
-Do Not fork this code! It is meant to be used by pressing the  <span style=color:white;background:green>**Use this Template**</span> button in GitHub. This will copy the code to your own repository with no connection back to the original repository like a fork would. This is what you want.
+Do Not fork this code! It is meant to be used by pressing the <span style=color:white;background:green>**Use this Template**</span> button in GitHub. This will copy the code to your own repository with no connection back to the original repository like a fork would. This is what you want.
 
 ## Development Environment
 
 These labs are designed to be executed in the IBM Developer Skills Network Cloud IDE with OpenShift. Please use the links provided in the Coursera Capstone project to access the lab environment.
 
-Once you are in the lab environment, you can initialize it with `bin/setup.sh` by sourcing it. (*Note: DO NOT run this program as a bash script. It sets environment variable and so must be sourced*):
+Once you are in the lab environment, you can initialize it with `bin/setup.sh` by sourcing it. (_Note: DO NOT run this program as a bash script. It sets environment variable and so must be sourced_):
 
 ```bash
 source bin/setup.sh
@@ -81,14 +83,14 @@ The code for the microservice is contained in the `service` package. All of the 
 
 The Account model contains the following fields:
 
-| Name | Type | Optional |
-|------|------|----------|
-| id | Integer| False |
-| name | String(64) | False |
-| email | String(64) | False |
-| address | String(256) | False |
-| phone_number | String(32) | True |
-| date_joined | Date | False |
+| Name         | Type        | Optional |
+| ------------ | ----------- | -------- |
+| id           | Integer     | False    |
+| name         | String(64)  | False    |
+| email        | String(64)  | False    |
+| address      | String(256) | False    |
+| phone_number | String(32)  | True     |
+| date_joined  | Date        | False    |
 
 ## Your Task
 
@@ -96,7 +98,7 @@ Complete this microservice by implementing REST API's for `READ`, `UPDATE`, `DEL
 
 ## Local Kubernetes Development
 
-This repo can also be used for local Kubernetes development. It is not advised that you run these commands in the Cloud IDE environment. The purpose of these commands are to simulate the Cloud IDE environment locally on your computer. 
+This repo can also be used for local Kubernetes development. It is not advised that you run these commands in the Cloud IDE environment. The purpose of these commands are to simulate the Cloud IDE environment locally on your computer.
 
 At a minimum, you will need [Docker Desktop](https://www.docker.com/products/docker-desktop) installed on your computer. For the full development environment, you will also need [Visual Studio Code](https://code.visualstudio.com) with the [Remote Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension from the Visual Studio Marketplace. All of these can be installed manually by clicking on the links above or you can use a package manager like **Homebrew** on Mac of **Chocolatey** on Windows.
 
@@ -104,21 +106,21 @@ Please only use these commands for working stand-alone on your own computer with
 
 1. Bring up a local K3D Kubernetes cluster
 
-    ```bash
-    $ make cluster
-    ```
+   ```bash
+   $ make cluster
+   ```
 
 2. Install Tekton
 
-    ```bash
-    $ make tekton
-    ```
+   ```bash
+   $ make tekton
+   ```
 
 3. Install the ClusterTasks that the Cloud IDE has
 
-    ```bash
-    $ make clustertasks
-    ```
+   ```bash
+   $ make clustertasks
+   ```
 
 You can now perform Tekton development locally, just like in the Cloud IDE lab environment.
 
