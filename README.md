@@ -1,4 +1,4 @@
-# DevOps Capstone Template
+<h1 align="center">IBM DevOps and Software Engineering <br> Capstone </h1>
 
 ![Build Status](https://github.com/vikiru/devops-capstone-project/actions/workflows/ci-build.yaml/badge.svg)
 
